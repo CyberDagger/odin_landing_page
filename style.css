@@ -20,7 +20,7 @@ button {
     background-color: #3882F6;
     color: #F9FAF8;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 900;
     padding: 8px 32px;
     border: none;
     border-radius: 8px;
@@ -38,7 +38,7 @@ header {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 nav {
@@ -102,6 +102,37 @@ nav a {
 
 .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.gallery > figure {
+    margin: 0;
+    flex-basis: 150px;
+}
+
+.gallery > figure > img {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #3882F6;
+    border-radius: 16px;
+}
+
+.gallery > figure > figcaption {
+    text-align: center;
+    color: #1F2937;
 }
 
 /*Quote*/
