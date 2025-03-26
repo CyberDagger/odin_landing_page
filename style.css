@@ -60,10 +60,10 @@ nav a {
 .hero {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #1F2937;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .hero-image {
@@ -73,7 +73,8 @@ nav a {
     justify-content: center;
     align-items: center;
     height: 200px;
-    width: 350px;
+    width: 400px;
+    flex-shrink: 0;
 }
 
 .hero-text {
@@ -81,8 +82,7 @@ nav a {
     flex-direction: column;
     align-items: flex-start;
     flex-basis: 450px;
-    flex-grow: 0;
-    gap: 8px;
+    gap: 16px;
 }
 
 .hero-text > *{
@@ -106,6 +106,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 96px;
 }
 
 .main h2 {
@@ -141,8 +142,35 @@ nav a {
 
 .quote {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
-~
+
+.quote-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    gap: 8px;
+}
+
+.quote-block > blockquote {
+    margin: 0;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-block > p {
+    margin: 0;
+    text-align: right;
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: 900;
+}
 
 /*Low Banner*/
 
