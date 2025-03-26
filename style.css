@@ -13,12 +13,22 @@ body {
 }
 
 body > * {
-    padding: 0 25vw;
+    padding: 0 10vw;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;
 }
 
 /*Header*/
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,14 +41,14 @@ body > * {
     font-weight: bold;
 }
 
-.nav {
+nav {
     list-style-type: none;
     padding-left: 0;
     display: flex;
     gap: 16px;
 }
 
-.nav a {
+nav a {
     text-decoration: none;
     color: #E5E7EB;
 }
@@ -47,34 +57,43 @@ body > * {
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #1F2937;
-    height: 300px;
+    padding-top: 48px;
     padding-bottom: 48px;
-}
-
-.hero-text,
-.hero-image {
-    flex: 1;
 }
 
 .hero-image {
     background-color: darkgrey;
-    align-self: stretch;
     margin: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 200px;
+    width: 350px;
 }
 
-.hero h1 {
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 450px;
+    flex-grow: 0;
+    gap: 8px;
+}
+
+.hero-text > *{
+    margin: 0;
+}
+
+.hero-text h1 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-.hero p {
+.hero-text p {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -100,6 +119,6 @@ body > * {
 
 /*Footer*/
 
-.footer {
+footer {
     display: flex;
 }
