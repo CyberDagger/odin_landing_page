@@ -1,0 +1,105 @@
+/*General Settings*/
+
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+}
+
+body > * {
+    padding: 0 25vw;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.nav {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+/*Hero Section*/
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    height: 300px;
+    padding-bottom: 48px;
+}
+
+.hero-text,
+.hero-image {
+    flex: 1;
+}
+
+.hero-image {
+    background-color: darkgrey;
+    align-self: stretch;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/*Main Section*/
+
+.main {
+    display: flex;
+}
+
+/*Quote*/
+
+.quote {
+    display: flex;
+}
+~
+
+/*Low Banner*/
+
+.banner {
+    display: flex;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+}
