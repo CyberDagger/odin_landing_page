@@ -72,6 +72,11 @@ nav a {
     flex-shrink: 0;
 }
 
+.hero-image > img {
+    height: 200px;
+    width: 400px;
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
